@@ -18,11 +18,6 @@ def fetch_nist_vulnerabilities(url):
 
     Returns:
         dict or None: The parsed JSON data if successful, or None if an error occurs.
-
-    Exceptions:
-        - If there is an error with the HTTP request, it prints an error message and returns None.
-        - If there is an error with the ZIP file, it prints an error message and returns None.
-        - If there is an error decoding the JSON, it prints an error message and returns None.
     """    
     try:
         response = requests.get(url)
